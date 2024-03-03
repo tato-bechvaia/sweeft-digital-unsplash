@@ -1,0 +1,32 @@
+.images-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.search-input {
+    width: 300px;
+    padding: 10px;
+    border: 2px solid #ccc;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    outline: none;
+    font-size: 16px;
+    transition: border-color 0.3s;
+}
+  
+.search-input:focus {
+    border-color: #007bff; /* Border color on focus */
+}
+  
+.search-input::placeholder {
+    color: #999; /* Placeholder color */
+}
+  
+  /* Example of search icon inside input */
+.search-input::placeholder:before {
+    content: '\f002'; /* Unicode for search icon */
+    font-family: FontAwesome;
+    margin-right: 5px;
+}
+  
